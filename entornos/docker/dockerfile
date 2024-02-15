@@ -1,0 +1,17 @@
+FROM ubutnu:20.04
+
+#RUN ejecuta comandos del sistema
+RUN apt update & apt install -i tmux vim zip
+
+WORKDIR /repo
+
+EXPOSE 33006:3306 8080:80 4443:443
+
+#(copia y descomprime, y creo la carpeta si no esta previamente creada)
+ADD ./repaso.zip /root/repaso
+# COPY con este no se descomprime, tambien crea la carpeta si no esta creada
+
+#CMD ejecuta comandos fuera del contenedor, pero hacia dentro del contenedor
+CMD /bin/bash
+# CMD ["/bin/bash", "otro comando"]
+
