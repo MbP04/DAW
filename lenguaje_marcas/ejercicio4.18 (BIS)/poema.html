@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina con enlace</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image:url('./images/imagen_fondo.jpg');
+        }
+        h1{
+            background-image:url('./images/fondo.avif');
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111111;
+        }
+    </style>
+</head>
+    <body>
+        <!-- Botonera-->
+        <ul>
+            <li><a href="#home">Poema</a></li>
+            <li><a href="#news">Quijote</a></li>
+            <li><a href="#contact">Mates</a></li>
+            <li><a href="#about">Noticia</a></li>
+        </ul>
+
+
+
+        <!-- Aqui tenemos un poema-->
+        <!-- Titulo Inicial-->
+        <h1>POEMA</h1>     
+        <h3 >El poema dice...</h3>
+        <pre style="background-color:hsl(187, 100%, 34%);">
+            Recuerde el alma dormida
+            Avive el seso y despierte
+            Contemplando
+            Cómo se pasa la vida,
+            Cómo se viene la muerte,
+            Tan callando,
+            Cuán presto se va el placer,
+            Cómo, después de acordado
+            Da dolor,
+            Cómo, a nuestro parecer,
+            Cualquier tiempo pasado
+            Fue mejor.
+        </pre>
+
+
+        <!-- Enlaze a ampliacion de la noticia-->
+        <a href="https://www.zendalibros.com/los-30-mejores-poemas-en-espanol/">Los 30 mejores poemas españoles</a>
+        <br>
+        <!--Boton de atras (va al indice)-->
+        <a href="./indice.html">
+            <img src="./images/arrow_img.gif" alt="Indice" style="width:42px;height:42px;">
+        </a>      
+    </body>
+</html>

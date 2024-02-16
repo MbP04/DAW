@@ -5,12 +5,12 @@ public class vehiculo {
 
     public vehiculo() {
         this.kilometrosRecorridos = 0;
-        vehiculo.vehiculosCreados++;
+        vehiculosCreados++;
     }
 
     public void and(int distancia) {
         this.kilometrosRecorridos += distancia;
-        vehiculo.kilometrosTotales += distancia;
+        kilometrosTotales += distancia;
     }
 
     public int getKilometrosRecorridos() {

@@ -1,0 +1,16 @@
+
+h1 {
+    color: blue;
+    font-family: verdana;
+    text-align:center;
+}
+p {
+    font-family: courier;
+    border: 2px solid;
+    color:hsl(203, 82%, 34%);
+}
+
+h3{
+    font-family: Verdana;
+    color:hsl(203, 82%, 34%);
+}

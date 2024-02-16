@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina con enlace</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                background-image: url('./images/imagen_fondo.jpg');
+            }
+
+            h1 {
+                background-image: url('./images/fondo.avif');
+            }
+            th:nth-child(even),td:nth-child(even) {
+                background-color: #c55c5c;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Botonera-->
+        <img src="./images/imagen5.jpg" alt="Workplace" usemap="#workmap">
+        <map name="workmap">
+            <area shape="rect" coords="16,13,161,88" alt="Matematicas" href="./mates.html">
+            <area shape="rect" coords="183,20,324,91" alt="Noticia Principal" href="./noticia_principal.html">
+            <area shape="rect" coords="349,20,490,87" alt="Poemas" href="./poema.html">
+            <area shape="rict" coords="518,18,659,87" alt="Don Quijotes" href="./quiojote.html">
+        </map>
+
+        <!-- Frase de Quijote-->
+        <h1>DON QUIJOTE</h1>
+        <p> Don Quijote dijo al morir: </p>
+        <blockquote style="color:hsl(214, 100%, 34%);">
+            <!--Historia de Don Quijote-->
+            <i>
+                No se muera vuesa merced, señor mío, sino tome mi consejo, y viva muchos años; porque la mayor
+                locura que puede hacer un hombre en esta vida es dejarse morir, sin más ni más, sin que nadie le
+                mate, ni otras manos le acaben que las de la melancolía.
+            </i>
+        </blockquote>
+        <!-- Enlaze a ampliacion de la noticia-->
+        <a href="https://es.wikipedia.org/wiki/Don_Quijote_de_la_Mancha">La vida de Don Quijote</a>
+        <br>
+        <!--Boton de atras (va al indice)-->
+        <a href="./indice.html">
+            <img src="./images/arrow_img.gif" alt="Indice" style="width:42px;height:42px;">
+        </a>
+
+        <table style="width:100%">
+            <caption>LIBROS</caption>
+            <tr>
+                <th colspan="2">Identificador</th>
+                <th colspan="2">Obra</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Autores</th>
+                <th style="width:30%">Títulos</th>
+                <th>Precio</th>
+            </tr>
+            <tr style="height:80px">
+                <td>1</td>
+                <td >MARQUÉS DE SADE</td>
+                <td>Justine de Sade</td>
+                <td>40€</td>
+            </tr>
+            <tr style="height:80px">
+                <td>2</td>
+                <td >GOETHE</td>
+                <td>Fausto</td>
+                <td>50€</td>
+            </tr>
+            <tr style="height:80px">
+                <td>3</td>
+                <td>JANE AUSTEN</td>
+                <td>Mansfield Park</td>
+                <td>60€</td>
+            </tr>
+            <tr style="height:80px">
+                <td>4</td>
+                <td>MARY SHELLEY</td>
+                <td>Frankenstein</td>
+                <td>70€</td>
+            </tr>
+            <tr style="height:80px">
+                <td>5</td>
+                <td>VICTOR HUGO</td>
+                <td>Los Miserables</td>
+                <td>80€</td>
+            </tr>
+            <tr style="height:80px">
+                <td>6</td>
+                <td>CHARLES DICKENS</td>
+                <td>Oliver Twist</td>
+                <td>90€</td>
+            </tr>
+        </table>       
+        
+    </body>
+</html>
